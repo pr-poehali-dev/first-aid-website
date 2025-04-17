@@ -12,13 +12,16 @@ const Navbar = () => {
       
       <div className="hidden md:flex space-x-4">
         <Button variant="ghost" asChild>
-          <Link to="/">Главная</Link>
+          <a href="#first-aid-types">Виды первой помощи</a>
         </Button>
         <Button variant="ghost" asChild>
-          <Link to="#emergency-contacts">Экстренные контакты</Link>
+          <a href="#safety-tips">Советы по безопасности</a>
         </Button>
         <Button variant="ghost" asChild>
-          <Link to="#about">О проекте</Link>
+          <a href="#first-aid-kit">Аптечка</a>
+        </Button>
+        <Button variant="ghost" asChild>
+          <a href="#emergency-contacts">Экстренные контакты</a>
         </Button>
       </div>
 
