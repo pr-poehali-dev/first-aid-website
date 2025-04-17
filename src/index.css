@@ -33,6 +33,11 @@
     --ring: 0 83% 53%;
 
     --radius: 0.5rem;
+    
+    /* Определяем дополнительные цвета для сайта первой помощи */
+    --emergency: 0 100% 61%;
+    --safe: 142 59% 42%;
+    --calm: 204 70% 53%;
   }
 
   .dark {
@@ -63,6 +68,10 @@
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
     --ring: 0 83% 53%;
+    
+    --emergency: 0 100% 61%;
+    --safe: 142 59% 42%;
+    --calm: 204 70% 53%;
   }
 }
 
@@ -74,4 +83,34 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+/* Дополнительные стили для сайта первой помощи */
+.text-emergency {
+  color: hsl(var(--emergency));
+}
+
+.bg-emergency {
+  background-color: hsl(var(--emergency));
+}
+
+.text-safe {
+  color: hsl(var(--safe));
+}
+
+.bg-safe {
+  background-color: hsl(var(--safe));
+}
+
+.text-calm {
+  color: hsl(var(--calm));
+}
+
+.bg-calm {
+  background-color: hsl(var(--calm));
+}
+
+/* Плавная прокрутка для якорных ссылок */
+html {
+  scroll-behavior: smooth;
 }
